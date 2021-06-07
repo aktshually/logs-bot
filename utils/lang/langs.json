@@ -1,0 +1,575 @@
+{
+    "portuguese": {
+        "events": {
+            "onMemberJoin": {
+                "Author":"Alguém entrou",
+                "Message":"{user} entrou no servidor!"
+            },
+            "onMemberRemove": {
+                "Author":"Alguém saiu",
+                "Message":"{user} saiu no servidor!"
+            },
+            "onMessageEdit": {
+                "Author":"Mensagem editada",
+                "Message":"{user} editou uma mensagem:\n {url}",
+                "Before":"**Antes:** ```{before_message}```",
+                "After":"**Depois:** ```{after_message}```"
+            },
+            "onMessageDelete": {
+                "Author":"Mensagem deletada",
+                "Message":"{user} deletou uma mensagem",
+                "Desc":"**Conteúdo:** ```{content}```"
+            },
+            "onInviteCreate": {
+                "Author":"Convite criado",
+                "Message":"{user} criou um convite:\n{url}"
+            },
+            "onInviteDelete": {
+                "Author":"Convite deletado",
+                "Message":"{user} deletou um convite:\n{url}"
+            }
+        },
+        "commands": {
+            "setEditChannel": {
+                "FirstEmbed": {
+                    "Confirm":"Confirmação",
+                    "Desc":"{mentionauthor}, você quer que o logs de mensagens editadas seja enviado em {mentionchannel}?",
+                    "PossibleDesc":"{mentionauthor}, você quer que o logs de mensagens editadas seja enviado em {mentionchannel}?\n**Aviso**: você ainda não ativou o logs para as mensagens serem enviadas. Use \"{prefix}setEditChannel\" para ativar.",
+                    "Footer":"Requisitado por {author}"
+                },
+                "SecondEmbed": {
+                    "Desc": "✅ | O canal foi mudado com sucesso!",
+                    "Footer":"Requisitado por {mentionauthor}"
+                },
+                "ThirdEmbed": {
+                    "Desc": "❌ | Requisitado por {author}",
+                    "Footer":"By {author}"
+                }
+            },
+            "changeLang": {
+                "FirstEmbed": {
+                    "Options":"Opções",
+                    "Footer":"Reaja de acordo com sua resposta"
+                }
+            },
+            "activateEditLogs": {
+                "FirstEmbed": {
+                    "Confirm":"Confirmação",
+                    "Desc":"Você quer ativar o logs de mensagens editadas?",
+                    "Footer":"Reaja de acordo com sua resposta"
+                },
+                "SecondEmbed": {
+                    "Desc":"✅ | Os logs foram ativados com sucesso!",
+                    "Footer":"Requisitado por {author}"
+                },
+                "ThirdEmbed": {
+                    "Desc":"❌ | Ação cancelada",
+                    "Footer":"Requisitado por {author}"
+                }
+            },
+            "deactivateEditLogs": {
+                "FirstEmbed": {
+                    "Confirm":"Confirmação",
+                    "Desc":"Você quer desativar o logs de mensagens editadas?",
+                    "Footer":"Reaja de acordo com sua resposta"
+                },
+                "SecondEmbed": {
+                    "Desc":"✅ | Os logs foram desativados com sucesso!",
+                    "Footer":"Requisitado por {author}"
+                },
+                "ThirdEmbed": {
+                    "Desc":"❌ | Ação cancelada",
+                    "Footer":"Requisitado por {author}"
+                }
+            },
+            "activateDeleteMessagesLogs": {
+                "FirstEmbed": {
+                    "Confirm":"Confirmação",
+                    "Desc":"Você quer ativar o logs de mensagens deletadas?",
+                    "Footer":"Reaja de acordo com sua resposta"
+                },
+                "SecondEmbed": {
+                    "Desc":"✅ | Os logs foram ativados com sucesso!",
+                    "Footer":"Requisitado por {author}"
+                },
+                "ThirdEmbed": {
+                    "Desc":"❌ | Ação cancelada",
+                    "Footer":"Requisitado por {author}"
+                }
+            },
+            "DeactivateDeleteMessagesLogs": {
+                "FirstEmbed": {
+                    "Confirm":"Confirmação",
+                    "Desc":"Você quer desativar o logs de mensagens deletadas?",
+                    "Footer":"Reaja de acordo com sua resposta"
+                },
+                "SecondEmbed": {
+                    "Desc":"✅ | Os logs foram desativados com sucesso!",
+                    "Footer":"Requisitado por {author}"
+                },
+                "ThirdEmbed": {
+                    "Desc":"❌ | Ação cancelada",
+                    "Footer":"Requisitado por {author}"
+                }
+            },
+            "setDeleteMessagesChannel": {
+                "FirstEmbed": {
+                    "Confirm":"Confirmação",
+                    "Desc":"{mentionauthor}, você quer que o logs de mensagens deletadas seja enviado em {mentionchannel}?",
+                    "PossibleDesc":"{mentionauthor}, você quer que o logs de mensagens deletadas seja enviado em {mentionchannel}?\n**Aviso**: você ainda não ativou o logs para as mensagens serem enviadas. Use \"{prefix}activateDeleteMessagesLog\" para ativar.",
+                    "Footer":"Requisitado por {author}"
+                },
+                "SecondEmbed": {
+                    "Desc": "✅ | O canal foi mudado com sucesso!",
+                    "Footer":"Requisitado por {mentionauthor}"
+                },
+                "ThirdEmbed": {
+                    "Desc": "❌ | Ação cancelada",
+                    "Footer":"Requisitado por {author}"
+                }
+            },
+            "activateInviteLog": {
+                "FirstEmbed": {
+                    "Confirm":"Confirmação",
+                    "Desc":"Você quer ativar os logs de convites?",
+                    "Footer":"Reaja com sua resposta"
+                },
+                "SecondEmbed": {
+                    "Desc":"✅ | Os logs foram ativados com sucesso!",
+                    "Footer":"Requisitado por {author}"
+                },
+                "ThirdEmbed": {
+                    "Desc":"❌ | Ação cancelada",
+                    "Footer":"Requisitado por {author}"
+                }
+            },
+            "deactivateInviteLog": {
+                "FirstEmbed": {
+                    "Confirm":"Confirmação",
+                    "Desc":"Você quer desativar os logs de convites?",
+                    "Footer":"Reaja com sua resposta"
+                },
+                "SecondEmbed": {
+                    "Desc":"✅ | Os logs foram desativados com sucesso!",
+                    "Footer":"Requisitado por {author}"
+                },
+                "ThirdEmbed": {
+                    "Desc":"❌ | Ação cancelada",
+                    "Footer":"Requisitado por {author}"
+                }
+            },
+            "setInviteLogChannel": {
+                "FirstEmbed": {
+                    "Confirm":"Confirmação",
+                    "Desc":"{mentionauthor}, você quer que o logs de convites criados/deletados seja enviado em {mentionchannel}?",
+                    "PossibleDesc":"{mentionauthor}, você quer que o logs de convites criados/deletados seja enviado em {mentionchannel}?\n**Aviso**: você ainda não ativou o logs para as mensagens serem enviadas. Use \"{prefix}activateInviteLog\" para ativar.",
+                    "Footer":"Requisitado por {author}"
+                },
+                "SecondEmbed": {
+                    "Desc": "✅ | O canal foi mudado com sucesso!",
+                    "Footer":"Requisitado por {mentionauthor}"
+                },
+                "ThirdEmbed": {
+                    "Desc": "❌ | Ação cancelada",
+                    "Footer":"Requisitado por {author}"
+                }
+            },
+            "activateWelcomeLogs": {
+                "FirstEmbed": {
+                    "Confirm":"Confirmação",
+                    "Desc":"Você quer ativar o logs da entrada/saída de membros?",
+                    "Footer":"Reaja com sua resposta"
+                },
+                "SecondEmbed": {
+                    "Desc":"✅ | Os logs foram ativados com sucesso!",
+                    "Footer":"Requisitado por {author}"
+                },
+                "ThirdEmbed": {
+                    "Desc":"❌ | Ação cancelada",
+                    "Footer":"Requisitado por {author}"
+                }
+            },
+            "deactivateWelcomeLog": {
+                "FirstEmbed": {
+                    "Confirm":"Confirmação",
+                    "Desc":"Você quer desativar o logs da entrada/saída de membros?",
+                    "Footer":"Reaja com sua resposta"
+                },
+                "SecondEmbed": {
+                    "Desc":"✅ | Os logs foram desativados com sucesso!",
+                    "Footer":"Requisitado por {author}"
+                },
+                "ThirdEmbed": {
+                    "Desc":"❌ | Ação cancelada",
+                    "Footer":"Requisitado por {author}"
+                }
+            },
+            "setWelcomeLogChannel": {
+                "FirstEmbed": {
+                    "Confirm":"Confirmação",
+                    "Desc":"{mentionauthor}, você quer que o logs de saída/entrada de membros seja enviado em {mentionchannel}?",
+                    "PossibleDesc":"{mentionauthor}, você quer que o logs de saída/entrada de membros seja enviado em {mentionchannel}?\n**Aviso**: você ainda não ativou o logs para as mensagens serem enviadas. Use \"{prefix}activateWelcomeLog\" para ativar.",
+                    "Footer":"Requisitado por {author}"
+                },
+                "SecondEmbed": {
+                    "Desc": "✅ | O canal foi mudado com sucesso!",
+                    "Footer":"Requisitado por {mentionauthor}"
+                },
+                "ThirdEmbed": {
+                    "Desc": "❌ | Ação cancelada",
+                    "Footer":"Requisitado por {author}"
+                }
+            },
+            "activateChannelCreateLogs": {
+                "FirstEmbed": {
+                    "Confirm":"Confirmação",
+                    "Desc":"Você quer ativar o logs de canais criados?",
+                    "Footer":"Reaja com sua resposta"
+                },
+                "SecondEmbed": {
+                    "Desc":"✅ | Os logs foram ativados com sucesso!",
+                    "Footer":"Requisitado por {author}"
+                },
+                "ThirdEmbed": {
+                    "Desc":"❌ | Ação cancelada",
+                    "Footer":"Requisitado por {author}"
+                }
+            },
+            "deactivateChannelCreateLogs": {
+                "FirstEmbed": {
+                    "Confirm":"Confirmação",
+                    "Desc":"Você quer desativar o logs de canais criados?",
+                    "Footer":"Reaja com sua resposta"
+                },
+                "SecondEmbed": {
+                    "Desc":"✅ | Os logs foram desativados com sucesso!",
+                    "Footer":"Requisitado por {author}"
+                },
+                "ThirdEmbed": {
+                    "Desc":"❌ | Ação cancelada",
+                    "Footer":"Requisitado por {author}"
+                }
+            },
+            "setChannelCreateChannel": {
+                "FirstEmbed": {
+                    "Confirm":"Confirmação",
+                    "Desc":"{mentionauthor}, você quer que o logs de canais criados seja enviado em {mentionchannel}?",
+                    "PossibleDesc":"{mentionauthor}, você quer que o logs de canais criados seja enviado em {mentionchannel}?\n**Aviso**: você ainda não ativou o logs para as mensagens serem enviadas. Use \"{prefix}activateChannelCreateLog\" para ativar.",
+                    "Footer":"Requisitado por {author}"
+                },
+                "SecondEmbed": {
+                    "Desc": "✅ | O canal foi mudado com sucesso!",
+                    "Footer":"Requisitado por {mentionauthor}"
+                },
+                "ThirdEmbed": {
+                    "Desc": "❌ | Ação cancelada",
+                    "Footer":"Requisitado por {author}"
+                }
+            },
+            "setPrefix": {
+                "FirstEmbed": {
+                    "Confirm":"Confirmação",
+                    "Desc":"Você quer mudar o prefixo para `{prefix}`?",
+                    "Footer":"Reaja com sua resposta"
+                },
+                "SecondEmbed": {
+                    "Desc":"✅ | Prefixo mudado com sucesso!",
+                    "Footer":"Requisitado por {author}"
+                },
+                "ThirdEmbed": {
+                    "Desc": "❌ | Ação cancelada",
+                    "Footer":"Requisitado por {author}"
+                }
+            }
+        }
+    },
+
+    "english": {
+        "events": {
+            "onMemberJoin": {
+                "Author":"Member joined",
+                "Message":"{user} joined the server!"
+            },
+            "onMemberRemove": {
+                "Author":"Member leave",
+                "Message":"{user} got out from the server!"
+            },
+            "onMessageEdit": {
+                "Author":"Message edited",
+                "Message":"{user} edited a message:\n {url}",
+                "Before":"**Before:** ```{before_message}```",
+                "After":"**After:** ```{after_message}```"
+            },
+            "onMessageDelete": {
+                "Author":"Message deleted",
+                "Message":"{user} deleted a message",
+                "Desc":"**Content:** ```{content}```"
+            },
+            "onInviteCreate": {
+                "Author":"Invite created",
+                "Message":"{user} created an invite:\n{url}"
+            },
+            "onInviteDelete": {
+                "Author":"Invite deleted",
+                "Message":"{user} deleted an invite:\n{url}"
+            },
+            "onGuildChannelCreate": {
+                "Author":"Channel created",
+                "Message":"A channel has been created:\n {channel} `({id})`"
+            }
+        },
+        "commands": {
+            "setEditChannel": {
+                "FirstEmbed": {
+                    "Confirm":"Confirm",
+                    "Desc":"{mentionauthor}, do you want to change the channel that the edited messages log is sent to {mentionchannel}?",
+                    "PossibleDesc":"{mentionauthor}, do you want to change the channel that the edited messages log is sent to {mentionchannel}?\n\n**Warning**: you didn't activate the logs to send the messages. Use **\"{prefix}activateEditLogs\"** to activate.",
+                    "Footer":"By {author}"
+                },
+                "SecondEmbed": {
+                    "Desc": "✅ | The channel has been changed successfully!",
+                    "Footer":"By {mentionauthor}"
+                },
+                "ThirdEmbed": {
+                    "Desc": "❌ | Action canceled",
+                    "Footer":"By {author}"
+                }
+            },
+            "changeLang": {
+                "FirstEmbed": {
+                    "Options":"Options",
+                    "Footer":"React with your answer"
+                }
+            },
+            "activateEditLogs": {
+                "FirstEmbed": {
+                    "Confirm":"Confirm",
+                    "Desc":"Do you want to activate the edit messages logs?",
+                    "Footer":"React with your answer"
+                },
+                "SecondEmbed": {
+                    "Desc":"✅ | The logs were activated successfully!",
+                    "Footer":"By {author}"
+                },
+                "ThirdEmbed": {
+                    "Desc":"❌ | Action canceled",
+                    "Footer":"By {author}"
+                }
+            },
+            "deactivateEditLogs": {
+                "FirstEmbed": {
+                    "Confirm":"Confirm",
+                    "Desc":"Do you want to deactivate the edit messages logs?",
+                    "Footer":"react with your answer"
+                },
+                "SecondEmbed": {
+                    "Desc":"✅ | The logs were deactivated successfully!",
+                    "Footer":"By {author}"
+                },
+                "ThirdEmbed": {
+                    "Desc":"❌ | Action canceled",
+                    "Footer":"By {author}"
+                }
+            },
+            "activateDeleteMessagesLogs": {
+                "FirstEmbed": {
+                    "Confirm":"Confirm",
+                    "Desc":"Do you want to activate the deleted messages logs?",
+                    "Footer":"React with your answer"
+                },
+                "SecondEmbed": {
+                    "Desc":"✅ | The logs were activated successfully!",
+                    "Footer":"By {author}"
+                },
+                "ThirdEmbed": {
+                    "Desc":"❌ | Action canceled",
+                    "Footer":"By {author}"
+                }
+            },
+            "DeactivateDeleteMessagesLogs": {
+                "FirstEmbed": {
+                    "Confirm":"Confirm",
+                    "Desc":"Do you want to deactivate the deleted messages logs?",
+                    "Footer":"React with your answer"
+                },
+                "SecondEmbed": {
+                    "Desc":"✅ | The logs were deactivated successfully!",
+                    "Footer":"By {author}"
+                },
+                "ThirdEmbed": {
+                    "Desc":"❌ | Action canceled",
+                    "Footer":"By {author}"
+                }
+            },
+            "setDeleteMessagesChannel": {
+                "FirstEmbed": {
+                    "Confirm":"Confirm",
+                    "Desc":"{mentionauthor}, do you want to change the channel that the deleted messages log is sent to {mentionchannel}?",
+                    "PossibleDesc":"{mentionauthor}, do you want to change the channel that the deleted messages log is sent to {mentionchannel}?\n\n**Warning**: you didn't activate the logs to send the messages. Use **\"{prefix}activateEditLogs\"** to activate.",
+                    "Footer":"Requisitado por {author}"
+                },
+                "SecondEmbed": {
+                    "Desc": "✅ | The channel has been changed successfully!",
+                    "Footer":"By {mentionauthor}"
+                },
+                "ThirdEmbed": {
+                    "Desc": "❌ | Action canceled",
+                    "Footer":"By {author}"
+                }
+            },
+            "activateInviteLog": {
+                "FirstEmbed": {
+                    "Confirm":"Confirm",
+                    "Desc":"Do you want to activate the invite logs?",
+                    "Footer":"React with your answer"
+                },
+                "SecondEmbed": {
+                    "Desc":"✅ | The logs were activated successfully!",
+                    "Footer":"By {author}"
+                },
+                "ThirdEmbed": {
+                    "Desc":"❌ | Action canceled",
+                    "Footer":"By {author}"
+                }
+            },
+            "deactivateInviteLog": {
+                "FirstEmbed": {
+                    "Confirm":"Confirm",
+                    "Desc":"Do you want to deactivate the invite logs?",
+                    "Footer":"React with your answer"
+                },
+                "SecondEmbed": {
+                    "Desc":"✅ | The logs were deactivated successfully!",
+                    "Footer":"By {author}"
+                },
+                "ThirdEmbed": {
+                    "Desc":"❌ | Action canceled",
+                    "Footer":"By {author}"
+                }
+            },
+            "setInviteLogChannel": {
+                "FirstEmbed": {
+                    "Confirm":"Confirm",
+                    "Desc":"{mentionauthor}, do you want to change the channel that the created invites log is sent to {mentionchannel}?",
+                    "PossibleDesc":"{mentionauthor}, do you want to change the channel that the created invites log is sent to {mentionchannel}?\n\n**Warning**: you didn't activate the logs to send the messages. Use **\"{prefix}activateInviteLog\"** to activate.",
+                    "Footer":"By {author}"
+                },
+                "SecondEmbed": {
+                    "Desc": "✅ | The channel has been changed successfully!",
+                    "Footer":"By {mentionauthor}"
+                },
+                "ThirdEmbed": {
+                    "Desc": "❌ | Action canceled",
+                    "Footer":"By {author}"
+                }
+            },
+            "activateWelcomeLogs": {
+                "FirstEmbed": {
+                    "Confirm":"Confirm",
+                    "Desc":"Do you want to activate the welcome/leave messages logs?",
+                    "Footer":"React with your answer"
+                },
+                "SecondEmbed": {
+                    "Desc":"✅ | The logs were activated successfully!",
+                    "Footer":"By {author}"
+                },
+                "ThirdEmbed": {
+                    "Desc":"❌ | Action canceled",
+                    "Footer":"By {author}"
+                }
+            },
+            "deactivateWelcomeLog": {
+                "FirstEmbed": {
+                    "Confirm":"Confirm",
+                    "Desc":"Do you want to deactivate the welcome/leave logs?",
+                    "Footer":"React with your answer"
+                },
+                "SecondEmbed": {
+                    "Desc":"✅ | The logs were deactivated successfully!",
+                    "Footer":"By {author}"
+                },
+                "ThirdEmbed": {
+                    "Desc":"❌ | Action canceled",
+                    "Footer":"By {author}"
+                }
+            },
+            "setWelcomeLogChannel": {
+                "FirstEmbed": {
+                    "Confirm":"Confirm",
+                    "Desc":"{mentionauthor}, do you want to change the channel that the joined/left members log is sent to {mentionchannel}?",
+                    "PossibleDesc":"{mentionauthor}, do you want to change the channel that the joined/left members log is sent to {mentionchannel}?\n\n**Warning**: you didn't activate the logs to send the messages. Use **\"{prefix}activateWelcomeLog\"** to activate.",
+                    "Footer":"By {author}"
+                },
+                "SecondEmbed": {
+                    "Desc": "✅ | The channel has been changed successfully!",
+                    "Footer":"By {mentionauthor}"
+                },
+                "ThirdEmbed": {
+                    "Desc": "❌ | Action canceled",
+                    "Footer":"By {author}"
+                }
+            },
+            "activateChannelCreateLogs": {
+                "FirstEmbed": {
+                    "Confirm":"Confirm",
+                    "Desc":"Do you want to activate the created channel logs?",
+                    "Footer":"React with your answer"
+                },
+                "SecondEmbed": {
+                    "Desc":"✅ | The logs were activated successfully!",
+                    "Footer":"By {author}"
+                },
+                "ThirdEmbed": {
+                    "Desc":"❌ | Action canceled",
+                    "Footer":"By {author}"
+                }
+            },
+            "deactivateChannelCreateLog": {
+                "FirstEmbed": {
+                    "Confirm":"Confirm",
+                    "Desc":"Do you want to activate the created channel logs?",
+                    "Footer":"React with your answer"
+                },
+                "SecondEmbed": {
+                    "Desc":"✅ | The logs were deactivated successfully!",
+                    "Footer":"By {author}"
+                },
+                "ThirdEmbed": {
+                    "Desc":"❌ | Action canceled",
+                    "Footer":"By {author}"
+                }
+            },
+            "setChannelCreateChannel": {
+                "FirstEmbed": {
+                    "Confirm":"Confirm",
+                    "Desc":"{mentionauthor}, do you want to change the channel that the created channels log is sent to {mentionchannel}?",
+                    "PossibleDesc":"{mentionauthor}, do you want to change the channel that the created channels log is sent to {mentionchannel}?\n\n**Warning**: you didn't activate the logs to send the messages. Use **\"{prefix}activateChannelCreateLogs\"** to activate.",
+                    "Footer":"By {author}"
+                },
+                "SecondEmbed": {
+                    "Desc": "✅ | The channel has been changed successfully!",
+                    "Footer":"By {mentionauthor}"
+                },
+                "ThirdEmbed": {
+                    "Desc": "❌ | Action canceled",
+                    "Footer":"By {author}"
+                }
+            },
+            "setPrefix": {
+                "FirstEmbed": {
+                    "Confirm":"Confirm",
+                    "Desc":"Do you want to change the prefix to `{prefix}`?",
+                    "Footer":"React with your answer"
+                },
+                "SecondEmbed": {
+                    "Desc":"✅ | Prefix changed successfully!",
+                    "Footer":"By {author}"
+                },
+                "ThirdEmbed": {
+                    "Desc": "❌ | Action canceled",
+                    "Footer":"By {author}"
+                }
+            }
+        }
+    }
+}
